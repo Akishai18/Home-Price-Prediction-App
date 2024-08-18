@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.welcome-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f3ffa7;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: space-around; /* Distribute space between testimonials */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 20px;
+  background-color: #000000;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  max-width: 45%; /* Adjust as needed */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-content {
+  max-width: calc(100% - 75px); /* Adjust to fit image and content */
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+
+.education-section {
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgb(226, 255, 249) 0%,
+    rgb(171, 255, 244) 89%,
+    rgb(143, 255, 240) 100%
+  );
+}
+
+.qa-section {
+  margin-bottom: 40px; /* Increased margin for better separation */
+}
+
+.qa-content {
+  display: flex;
+  align-items: flex-start; /* Align items at the start to avoid vertical centering issues */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.qa-text {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 300px; /* Ensures the text section has a minimum width */
+}
+
+.qa-image {
+  flex: 1;
+  text-align: center;
+  min-width: 300px; /* Ensures the image section has a minimum width */
+}
+
+.qa-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1.education {
+  margin-bottom: 20px; /* Added margin for spacing above the section */
+}
+
+h2 {
+  margin-bottom: 15px; /* Increased margin for better spacing below headings */
+}
+
+@media (max-width: 768px) {
+  .qa-content {
+    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    align-items: center; /* Center items on smaller screens */
+  }
+
+  .qa-text, .qa-image {
+    margin-right: 0; /* Remove margin on smaller screens */
+    min-width: 100%; /* Allow sections to take full width */
+  }
+
+  .qa-image img {
+    max-width: 90%; /* Limit image width on smaller screens */
+  }
+}

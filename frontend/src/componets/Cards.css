@@ -1,0 +1,470 @@
+.cards {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .cards__items {
+    margin-bottom: 24px;
+  }
+  
+  .cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+  .cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cards__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .cards__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .cards__item__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards__item__info {
+    padding: 20px 30px 30px;
+  }
+  
+  .cards__item__text {
+    color: transparent;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cards__item {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .SFDetach-Header{
+    margin-right: 50rem;
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .location-container {
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: -1rem; /* Adjust spacing if needed */
+    margin-left: 1rem;
+}
+
+.Location {
+    margin-right: 1rem; /* Space between heading and input */
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.location-textbox {
+    height: 25px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /* Adjust to match your design */
+}
+
+
+.date-container {
+  display: flex; /* Align children horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 1rem; /* Adjust spacing if needed */
+  margin-left: 1rem;
+}
+
+.date {
+  margin-right: 1rem; /* Space between heading and input */
+  font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.date-textbox {
+  height: 25px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem; /* Adjust to match your design */
+}
+
+
+
+.SFDetach-Header2{
+  margin-top: 2rem;
+  font-size: 24px;
+}
+
+.Comp-Header {
+  margin-top: -12.5rem;
+  margin-right: -28rem;
+  margin-bottom: 2rem;
+}
+
+/* Specific CSS for new Comp location container */
+.comp-location-container {
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+  margin-left: 36.5rem;
+}
+
+.Comp-Location {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.comp-location-textbox {
+  height: 25px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Specific CSS for new Comp date container */
+.comp-date-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 36.5rem;
+}
+
+.Comp-Date {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.comp-date-textbox {
+  height: 25px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+.SFAttach-Header {
+  margin-right: 48rem;
+  text-align: center;
+  margin-top: -15rem;
+}
+
+/* Location container for SFAttach */
+.SFAttach-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.SFAttach-Location {
+  margin-bottom: 5px;
+  font-size: 24px;
+  margin-right: 62.5rem;
+}
+
+.SFAttach-location-textbox {
+  margin-top: 0rem;
+  font-size: 18px;
+  margin-right: 40rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute
+}
+
+/* Date container for SFAttach */
+.SFAttach-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.SFAttach-Date {
+  margin-top: -0.5rem;
+  font-size: 24px;
+  margin-right: 65rem;
+}
+
+.SFAttach-date-textbox {
+  margin-top: -0.3 rem;
+  font-size: 24px;
+  margin-right: 40rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  position: absolute
+}
+
+.submit1,
+.submit2,
+.submit3,
+.submit4,
+.submit5 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #bf58f3);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  height: 40px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-top: 12px;
+}
+
+.submit1:hover,
+.submit2:hover,
+.submit3:hover,
+.submit4:hover,
+.submit5:hover hover {
+  outline: 0;
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+.submit1:active,
+.submit2:active,
+.submit3:active,
+.submit4:active,
+.submit5:active {
+  outline: 0;
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+.submit1 span,
+.submit2 span,
+.submit3 span,
+.submit4 span,
+.submit5 span {
+  background-color: rgb(5, 6, 45);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.submit1:hover span,
+.submit2:hover span,
+.submit3:hover span,
+.submit4:hover span,
+.submit5:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .submit1,
+  .submit2,
+  .submit3,
+  .submit4,
+  .submit5 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+/* Specific Styles for Individual Buttons */
+.submit1 {
+  margin-left: 2rem;
+}
+
+.submit2 {
+  margin-left: 37rem;
+}
+
+.submit3 {
+  margin-left: -31rem;
+  margin-top: -3rem;
+  position: absolute
+}
+
+.submit4 {
+margin-left: -8rem;
+margin-top: -3rem;
+position: absolute
+}
+
+.submit5{
+  margin-left: 15rem;
+  margin-top: -3rem;
+  position: absolute 
+}
+.THouse-Header{
+  margin-left: 390px;
+  margin-top: -7.9rem;
+}
+
+.THouse-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.THouse-Location {
+  margin-bottom: 5px;
+  font-size: 24px;
+  margin-left: -240px;
+}
+
+.THouse-location-textbox {
+  font-size: 18px;
+  margin-top: 0rem;
+  margin-left: 100px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute
+}
+
+/* Date container for SFAttach */
+.THouse-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.THouse-Date {
+  margin-top: -0.4rem;
+  font-size: 24px;
+  margin-left: -280px;
+}
+
+.THouse-date-textbox {
+  font-size: 24px;
+  margin-top: -0.3rem;
+  margin-left: 100px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  position: absolute
+}
+
+.Apart-Header{
+  margin-left: 760px;
+  margin-top: -7.9rem;
+}
+
+.Apart-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Apart-Location {
+  margin-bottom: 5.1px;
+  font-size: 24px;
+  margin-left: 500px;
+}
+
+.Apart-location-textbox {
+  font-size: 18px;
+  margin-top: 0rem;
+  margin-left: 860px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute
+}
+
+/* Date container for SFAttach */
+.Apart-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Apart-Date {
+  margin-top: -0.4rem;
+  font-size: 24px;
+  margin-left: 465px;
+}
+
+.Apart-date-textbox {
+  font-size: 24px;
+  margin-top: -0.3rem;
+  margin-left: 860px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  position: absolute
+}
