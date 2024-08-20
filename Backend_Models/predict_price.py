@@ -51,7 +51,7 @@ def prediction():
         new_data = new_data.reindex(columns=x_train_comp_columns, fill_value=0)
 
         predictions = forest_comp.predict(new_data)
-        predictions = int(predictions[0] + 700000)
+        predictions = int(predictions[0])
         print(predictions)
 
     elif home == "SFDetach":
@@ -73,7 +73,7 @@ def prediction():
         new_data = new_data.reindex(columns=x_train_SFDetach_columns, fill_value=0)
 
         predictions = forest_SFDetach.predict(new_data)
-        predictions = int(predictions[0] * 100000 + 400000)
+        predictions = int(predictions[0])
         print(predictions)
 
     elif home == "SFAttach":
