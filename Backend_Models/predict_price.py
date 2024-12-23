@@ -43,21 +43,26 @@ def prediction():
         yoy_change_value = row[f'{home}YoYChange'].values[0]
     else:
         # Fallback default values if no match is found
-        index_value = 100 if home == 'Comp'
-        index_value = 280 if home == 'SFDetach'
-        index_value = 480 if home == 'SFAttach'
-        index_value = 350 if home == 'THouse'
-        index_value = 500 if home == 'Apart'
-        benchmark_value = 850000 if home == 'Comp'
-        benchmark_value = 1400000 if home == 'SFDetach' 
-        benchmark_value = 1100000 if home == 'SFAttach' 
-        benchmark_value = 800000 if home == 'THouse' 
-        benchmark_value = 600000 if home == 'Apart' 
-        yoy_change_value = 100 if home == 'Comp' 
-        yoy_change_value = 10 if home == 'SFDetach' 
-        yoy_change_value = 20 if home == 'SFAttach' 
-        yoy_change_value = 50 if home == 'THouse' 
-        yoy_change_value = 0.13 if home == 'Apart' 
+        if home == 'Comp':
+            index_value = 100
+            benchmark_value = 850000
+            yoy_change_value = 100
+        elif home == 'SFDetach':
+            index_value = 280
+            benchmark_value = 1400000
+            yoy_change_value = 10
+        elif home == 'SFAttach':
+            index_value = 480
+            benchmark_value = 1100000
+            yoy_change_value = 20
+        elif home == 'THouse':
+            index_value = 350
+            benchmark_value = 800000
+            yoy_change_value = 50
+        elif home == 'Apart':
+            index_value = 500
+            benchmark_value = 600000 
+            yoy_change_value = 0.13 
 
     new_data = pd.DataFrame({
         'Date': [date],
